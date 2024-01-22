@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Transfrom  Properties in CVss </title>
+    <style> 
+    *{
+        margin:0px;
+        padding: 0px;
+    }
+       .box{
+        background: orangered;
+        width: 350px;
+        height:350px;
+        border-radius: 20px;
+        border:3px solid  violet;
+        transform:rotate(26deg)
+        /* transition all short  writting form*/
+        transition: all 0.5s ease-in-out;
+
+       }
+       .box:hover{
+             
+            transform: rotate(360deg);
+            transform: skew(40deg);
+            transform: scale(2);
+            /* transform: translateX(123px); */
+            /* transform: translateY(123px);  */
+             transform: translate(123px, 123px); 
+       }
+       .container{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        display: flex;
+       }
+            
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class="box">
+
+        Thgis is a transform.
+
+            </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Variable Dclearing in the  CSs</title>
+           <style>
+            /* Here the conept of root is appllicable a
+            & work globaly on given cod eprogramm*/
+            :root{
+             --secondry-color:yellow;
+             --danger-color:rgb(0, 255, 179);
+            /*  --maxh:400px; */
+             --maxw:15px;
+            }
+               /* .box{ */
+                /* --box-color:red; */
+                /* --box-clolor:var(--box-clolor) */
+                /* border: 3px solid var(var(--box-color)); */
+                /* width: 200px ; */
+                /* height :150px; */
+                /* margin:5px 15px; */
+                /* display: flex; */
+                /* background-color:var(--box-color); */
+                /* box-shadow: var(--box-clolor); */
+                /* align-items: center; */
+                /* display: flex; */
+                /* justify-content: center; */
+               /* } */
+
+               .box{
+               
+                /* --box-clolor:var(--second-clolor) */
+                border: 1px solid var(--danger-color);
+                width: 200px ;
+                height :150px;
+                margin:1px 8px;
+               
+                background-color:var(--danger-color);
+                box-shadow: var(--secondry-color);
+               }
+               
+               .contianer{
+              
+                margin:auto;
+                align-items: center;
+                display:flex;
+                justify-content:center;
+                /* height:var(--mavh) */
+                max-width:var(var(--maxw));
+                background-color: var(--secondry-color);
+               
+               }
+
+
+
+     
+
+             </style>  
+
+
+</head>
+<body>
+    <div class="contianer">
+
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+
+      </div>     
+</body>
+</html>

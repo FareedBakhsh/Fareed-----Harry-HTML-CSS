@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animatiion</title>
+    <style>
+          .container {
+              background-color: brown;
+          }
+          .box {
+               width: 250px;
+               height: 150px;
+               position: relative;
+               border: 2px solid yellow;
+               background-color: yellow;
+               /* animation-name: fareed1; */
+               animation-name: fareed2;
+               animation-duration: 3s;
+               animation-iteration-count:3;
+               /* animation-fill-mode: forwards; */
+               /* animation-delay: 0.01s; */
+              /*  animation-timing-function:ease-in; */
+              /* animation-direction:alternate-reverse; */
+          }
+          /*To run the animation we used the @key frames{.
+         } to start from to */ 
+         @keyframes fareed1 {
+            from{
+                width:100px;
+            }
+            to{
+                width:700px;
+            }
+         }
+         /*Another method to write and ceat to the animatioin*/
+     @keyframes fareed2{
+        0%{
+            top:0px;
+            left: 0;
+        }
+        25%{
+            top:200px;
+            left: 10;
+           /*  right: 100; */
+            bottom: 150px;
+        }
+        75%{
+            top:200px;
+            left: 200;
+            right: 100;
+            /* ! */
+        } 
+        100%{
+            top:0px;
+            left: 200px;
+            right: 100;
+           /*  right: 100; */
+            bottom: 150px;
+        } 
+     }
+    </style>
+</head>
+<body>
+       <div class="container">
+          <div class="box">
+
+          </div>
+       </div>
+</body>
+</html>

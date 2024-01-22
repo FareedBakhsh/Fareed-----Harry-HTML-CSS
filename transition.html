@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Transitions In css</title>
+    <style>
+         body{
+               background:black;
+         } 
+       #box{ 
+             width:200px; 
+             height:200px;
+             text-align: center; 
+            justify-content: center; 
+             align-items: center;
+             border: 3px slid orange; 
+             display:flex; 
+             background: red; 
+        font-size:30px; 
+         } 
+        #box:hover{ 
+                  color: rgb(0, 255, 162);
+                   width:200px; 
+                 height:150px; 
+                    /* transition-duration:1mints;  */
+                     /* transition-timing-function:ease-in; */
+                    /* transition-property:background-color;  */
+                     /* /*Writitng in the Shoirt hand form of */
+                      /* all transitions elements *? */
+                    transition:ease-out 5s 1mints yellow; 
+                }
+    </style> 
+ </head> 
+<body> 
+         <div class="container"> 
+
+            <div id="box"> 
+       This is my the box 
+       </div> 
+
+     </div> 
+</body> 
+ </html>
+

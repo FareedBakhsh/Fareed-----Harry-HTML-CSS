@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID_ADVANCE IN CSS PROPERTIES  </title>
+        <style>       
+               .grid{
+             
+                /* display: grid; */
+                /* grid-template-columns: 1fr 2fr 3fr 4fr; */
+                /* grid-template-rows: 3fr; */
+                /* grid-template-rows: 1fr 0fr 0fr 0fr; */
+                /* grid-gap: 1rem; */
+                display: grid;
+        grid-template-rows: 1fr 1fr 4fr;
+        grid-auto-rows: 2fr;
+        grid-template-columns: repeat(4, 2fr);
+        grid-gap: 2rem;
+    }
+               
+               .box{
+                background-color: aqua;
+                border: 3px solid black;
+                margin: 5px;
+               }
+        </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="box">This is a box-1</div>
+        <div class="box">This is a box-2</div>
+        <div class="box">This is a box-3</div>
+        <div class="box">This is a box-4</div>
+        <div class="box">This is a box-5</div>
+        <div class="box">This is a box-6</div>
+        <div class="box">This is a box-7</div>
+        <div class="box">This is a box-8</div>
+    </div>
+</body>
+</html>

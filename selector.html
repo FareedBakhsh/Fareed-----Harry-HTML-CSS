@@ -1,0 +1,45 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background: red;
+            font-size: 30px;
+            font-weight: bold;
+        }
+/*  */
+ /* p will be  outside the dive ,css will be applied */
+        /* div + p{ */
+            /* background: red; */
+            /* font-size: 30px; */
+            /* font-weight: bold; */
+        /* } */
+ /* p will be inn side the dive ,css will be applied */
+        div > p{
+            background: red;
+            font-size: 30px;
+            font-weight: bold;
+        }
+     
+      </style>
+ </head>
+ <body>
+      <h1>. This is an selector </h1>
+
+      <div>
+
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <ul>
+            <li>. This  selector li</li>
+            <div>this is div inside ul</div>
+            <ul><p>Lorem ipsum dolor sit amet.</p></ul>
+            <p class="pr">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto dignissimos qui non, amet fugiat
+                 tenetur totam minima sequi dolore repudiandae nam sapiente voluptate cum. Ipsa dolores iste magnam cupiditate odio!</p>
+        </ul>
+      </div>
+      <p>This paragraph outside the dive </p>
+ </body>
+ </html>

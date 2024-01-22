@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Navigattion In CSS  </title>
+    <style>
+
+
+        #head{
+                background-color: yellow;
+                border:5px solid blue;
+                border-bottom: 1px;
+                padding-bottom: 75px;
+                margin-top: 2px;
+                border-radius: 50px;
+
+            }
+            .nav{
+                background-color: black;
+                
+            }
+            .nav li{
+                float: left;
+                font-size: 30px;
+                padding: 5px;
+                margin: 4px;
+                border-radius: 15px;
+                list-style: none;
+                text-underline-position: auto;
+                border: 5px solid blue;
+                
+              }
+           #border li a{
+                         text-decoration: none;
+           }
+
+           #border li a:hover{
+                         text-decoration: none;
+                         background:orangered;
+                      }
+          input{
+                   text-align: left
+          }
+          .search{
+            float: right;
+            margin:20px;
+            border: 5px solid ;
+            border-radius: 10px;
+            cursor: pointer;
+            
+          }
+          .search input:hover{
+            background: violet;
+            
+
+          }
+          /*  */
+    </style>
+   
+
+</head>
+<body>
+        <header  id="head">
+            <navbar class="nav">
+
+            <ul id="border">
+                <li> <a href="">Home</a></li>
+                <li> <a href="">About us</a></li>
+                <li> <a href="">Contact us</a></li>
+                <li><a href="">Services</a></li>
+             
+               
+       </ul>
+       <div class="search">
+          <input type="text" name="search" id="search" placeholder="search this website">
+       </div>
+            </navbar>
+            
+        </header>
+</body>
+</html>

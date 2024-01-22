@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID GAP BETWEEN THE COLUMN AND ROW</title>
+    <style>
+    .box{
+        border: 2px sloid blue;
+        background-color: aquamarine;
+        width: 500xp;
+        height:50px;
+        margin: 4px;
+        padding: 3px;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+
+    }
+    .grid{
+        display:grid;
+        grid-template-columns:1fr 2fr 3fr ;
+        grid-template-rows: 1fr 2fr 3fr 4fr 2f;
+        grid-template-columns: repeat(4,4fr);
+        grid-auto-rows: 2fr;
+        grid-gap: 1rem;
+
+    }
+    </style>
+</head>
+<body>
+        <div class="grid">
+             
+             <div class="box">This is a item-11</div>
+             <div class="box">This is a item-12</div>
+             <div class="box">This is a item-13</div>
+            <div class="box">This is a item-14</div>
+            <div class="box">This is a item-15</div>
+            <div class="box">This is a item-16</div>
+            <div class="box">This is a item-17</div>
+            <div class="box">This is a item-18</div>
+            <div class="box">This is a item-19</div>  
+
+        </div>
+</body>
+</html>
